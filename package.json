@@ -1,0 +1,20 @@
+{
+  "name": "wealthfolio",
+  "version": "1.0.0",
+  "description": "Wealthfolio is an app that helps you to get the prices of your stocks from different brokers in a single view",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "request": "^2.88.2",
+    "scramjet": "^4.36.9"
+  }
+}
