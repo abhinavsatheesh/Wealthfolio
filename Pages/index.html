@@ -71,6 +71,13 @@
                 
     </body>
     <script>
+        setTimeout(async function() {if (document.getElementById("share_table").rows.length==1) {clearTimeout()} else{localStorage.setItem("refresh-share", true); window.location.reload();}}, 5000)
+        if (localStorage.getItem("refresh-share" == true))
+        {
+            
+           document.getElementById("share_list_table_btn").click();
+           console.log("HIII")
+        }
         function delshare(rownumber)
         {
             var lisrtt = JSON.parse(localStorage.getItem("listofshares_watchlist"))
