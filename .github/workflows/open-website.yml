@@ -2,6 +2,7 @@ name: Open Website
 on:
   schedule:
     - cron: "*/3 * * * *"
+  workflow_dispatch:
 
 jobs:
   open-website:
@@ -14,4 +15,4 @@ jobs:
       - name: Open Website
         run: |
           # Replace 'https://www.example.com' with the URL of your website
-          curl -sSf -o /dev/null https://wealthfolio.onrender.com
+          curl -sSf -o /dev/null https://wealthfolio.onrender.com/
