@@ -1,0 +1,17 @@
+name: Open Website
+on:
+  schedule:
+    - cron: "*/3 * * * *"
+
+jobs:
+  open-website:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Open Website
+        run: |
+          # Replace 'https://www.example.com' with the URL of your website
+          curl -sSf -o /dev/null https://wealthfolio.onrender.com
